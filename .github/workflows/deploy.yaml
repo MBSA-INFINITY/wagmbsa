@@ -29,9 +29,9 @@ jobs:
         git config --global user.email "mbsaiaditya@gmail.com"
         git config --global user.name "MBSA-INFINITY"
         git checkout --orphan mbsa
-        git rm -rf node_modules
-        git rm -rf .next
+        ls
         git add -f out
+        git rm -rf .
         cp -r out/. .
         git add .
         git commit -m "Deploy to mbsa branch"
