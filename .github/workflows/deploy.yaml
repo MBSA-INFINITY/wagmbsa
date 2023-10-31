@@ -28,9 +28,9 @@ jobs:
       run: |
         git config --global user.email "mbsaiaditya@gmail.com"
         git config --global user.name "MBSA-INFINITY"
+        git rm -rf node_modules
         git checkout --orphan mbsa
         git add -f out
-        git rm -rf node_modules
         git clean -ffxd 
         cp -r out/. .
         git add .
