@@ -30,8 +30,8 @@ jobs:
         git config --global user.name "MBSA-INFINITY"
         git checkout --orphan mbsa
         ls
+        git rm -rf node_modules
         git add -f out
-        git rm -rf .
         cp -r out/. .
         git add .
         git commit -m "Deploy to mbsa branch"
