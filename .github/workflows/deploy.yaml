@@ -31,9 +31,6 @@ jobs:
         git checkout --orphan mbsa
         git add -f out
         git rm -rf node_modules
-        git rm -rf pages
-        git rm -rf public
-        git rm -rf src
         git clean -ffxd 
         cp -r out/. .
         git add .
