@@ -30,6 +30,7 @@ jobs:
         git config --global user.name "MBSA-INFINITY"
         git checkout --orphan mbsa
         git rm -rf .
+        git clean -ffxd 
         cp -r out/. .
         git add .
         git commit -m "Deploy to mbsa branch"
