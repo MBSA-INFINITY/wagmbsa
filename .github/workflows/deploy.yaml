@@ -30,7 +30,8 @@ jobs:
         git config --global user.name "MBSA-INFINITY"
         git checkout --orphan mbsa
         git add -f out
-        git rm -rf .
+        git rm -rf node_modules/
+        git rm -rf .next/
         git clean -ffxd 
         cp -r out/. .
         git add .
